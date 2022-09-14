@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from 'react'
 import styled from '@emotion/styled'
 import { FaCaretUp, FaCaretDown } from 'react-icons/fa'
 import Chart from 'react-apexcharts'
+import { Button } from 'cloz-ui'
 
 const priceUrl =
 	'https://min-api.cryptocompare.com/data/v2/histohour?fsym=BTC&tsym=USD&limit=200'
@@ -279,6 +280,7 @@ export default function Market() {
 					height={320}
 				/>
 			</div>
+			<Button />
 		</PageContainer>
 	)
 }
